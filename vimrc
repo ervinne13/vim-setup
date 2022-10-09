@@ -26,11 +26,22 @@ Plugin 'https://github.com/tpope/vim-fugitive' " For blaming others for bugs :D
 Plugin 'scrooloose/nerdtree' " Now we're 'IDEing', pretty much file tree on the left
 Plugin 'mattn/emmet-vim' " HTML awesomeness
 
+" Checkout vim airline later but this thing bugs out with weird characters on
+" my end :(. Disable for now
+" Plugin 'vim-airline/vim-airline' " The nice looking bar at the bottom
+" Plugin 'vim-airline/vim-airline-themes'
+
+" Themes (Enablement at the bottom)
+Plugin 'glepnir/oceanic-material'
+
 " NERDTree Configs (Shortcuts, C means ctrl, C-t is ctrl+t)
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" Airline Settings
+let g:airline_theme='simple'
 
 " Automatically install Vundle if it's not yet installed
 " Thank you https://www.twilio.com/blog/5-must-have-vim-plugins-that-will-change-your-workflow
@@ -55,5 +66,8 @@ syntax on
 
 " always have line numbers
 set nu
+
+" Actually Enable the theme
+" colorscheme glepnir/oceanic-material " Didn't work lol, set this up later
 
 " End non vundle stuff
