@@ -26,6 +26,11 @@ Plugin 'https://github.com/tpope/vim-fugitive' " For blaming others for bugs :D
 Plugin 'scrooloose/nerdtree' " Now we're 'IDEing', pretty much file tree on the left
 Plugin 'mattn/emmet-vim' " HTML awesomeness
 
+" NERDTree Configs (Shortcuts, C means ctrl, C-t is ctrl+t)
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " Automatically install Vundle if it's not yet installed
 " Thank you https://www.twilio.com/blog/5-must-have-vim-plugins-that-will-change-your-workflow
